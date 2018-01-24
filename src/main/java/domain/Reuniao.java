@@ -8,9 +8,12 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 import org.neo4j.ogm.annotation.typeconversion.DateLong;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+import DAO.ReuniaoRepository;
 
 @JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
 @NodeEntity(label = "Reuniao")
@@ -24,6 +27,9 @@ public class Reuniao {
 	private String nome;
 	private Integer numeroReuniao;
 
+	@Autowired
+	ReuniaoRepository repo;
+	
 	private String documento;
 	
 	@Relationship(type = "PERTENCE", direction = Relationship.OUTGOING)

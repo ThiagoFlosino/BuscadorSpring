@@ -12,6 +12,8 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 public abstract class Entidade {
 		
 	@Id @GeneratedValue
+	private Long graphId;
+
 	private Long id;
 	
 	private String posicao;
