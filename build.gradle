@@ -31,5 +31,13 @@ dependencies {
     
     // Neo4j Driver Spring
     compile 'org.springframework.data:spring-data-neo4j:5.0.2.RELEASE'
+     compile("org.springframework.boot:spring-boot-starter-data-neo4j")
+    
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa:1.5.6.RELEASE'
+    
+    
+    compile group: 'org.springframework.social', name: 'spring-social-config', version: '1.1.0.RELEASE'
+    
+    
 }
 

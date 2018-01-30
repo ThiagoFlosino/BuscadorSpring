@@ -4,10 +4,7 @@ import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
-@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
 @NodeEntity(label = "Entidade")
 public abstract class Entidade {
 		

@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'Buscador-Gradle-Spring'
+rootProject.name = 'BuscadorSpring'

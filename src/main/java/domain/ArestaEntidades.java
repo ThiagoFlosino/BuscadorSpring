@@ -7,10 +7,7 @@ import org.neo4j.ogm.annotation.Property;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
-@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
 @RelationshipEntity(type = "entidadeEntidade")
 public class ArestaEntidades {
 
